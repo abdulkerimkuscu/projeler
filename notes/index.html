@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notlar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css" integrity="sha512-HHsOC+h3najWR7OKiGZtfhFIEzg5VRIPde0kB0bG2QRidTQqf+sbfcxCTB16AcFB93xMjnBIKE29/MjdzXE+qw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/1.1.1/marked.min.js"></script>
+
+</head>
+<body>
+  
+   <button class="add" id="add">
+    <i class="fa-regular fa-folder-open"></i>Add Note
+   </button>
+   <button class="deleteAll" id="deleteAll"><i class="fa-regular fa-trash-can"></i> Delete All Notes
+   </button>
+   <div class="alert alert-hidden">
+    <p class="alert-p"><span> !!!Bütün Notları Silmek İstediğinizden Emin Misiniz?</span></p>
+    <button id="yes"><i class="fa-solid fa-check"></i> Evet</button>
+    <button id="no"><i class="fa-solid fa-xmark"></i> Hayır</button>  
+    
+   </div>
+  
+
+   <script src="script.js"></script>
+</body>
+</html>

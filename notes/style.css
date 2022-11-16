@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfWsX2_dPFKf8X9je-BXUI5ibK6rzmW5a11iPomeDO02BK5jF5eDb9Z_bfDcXIsY9Dra0&usqp=CAU"); 
+    background-size: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    font-family: 'Caveat', cursive;
+    font-size: 25px;
+    
+}
+
+.note{
+    width: 350px;
+    height: 299px;
+    margin: 4rem;
+    
+}
+
+
+.note-nav{
+    display: flex;
+    width: 100%;
+    height: 2rem;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(126,142,211,1) 42%, rgba(0,212,255,1) 100%);
+    padding-top: 10px;
+    justify-content: end;
+    border-radius: 1rem 1rem 0 0;
+    
+}
+.note-nav button{
+    background-color: transparent;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    width: 30px;
+    height: 30px;
+    margin-top: -10px;
+    
+}
+.note textarea{
+    outline: none;
+    width: 100%;
+    height: 100px;
+    border: none;
+    background-image: url("https://e7.pngegg.com/pngimages/741/852/png-clipart-drawing-eraser-pencil-sketch-eraser-angle-pencil.png");
+    background-size: 30px;
+}
+.note .main {
+    background: radial-gradient(circle, rgba(232,181,156,1) 0%, rgba(177,218,228,1) 100%);
+    overflow: hidden;
+    height: 267px;
+    width: 100%;
+   
+}
+.note .hidden{
+    display: none;
+   
+}
+.add{
+    right: 1rem;
+    position: fixed;
+    color: #000;
+    border: none;
+    border-radius: 30px;
+    width: 100px;
+    height: 50px;
+    margin-top: 1rem;
+    cursor: pointer;
+    border: 2px outset #21a41c;
+}
+.add:hover{
+    background: radial-gradient(circle, rgba(0,249,7,1) 0%, rgba(70,252,237,1) 100%);
+}
+.deleteAll{
+    right: 1rem;
+    position: fixed;
+    color: #000;
+    border: none;
+    border-radius: 30px;
+    width: 100px;
+    height: 50px;
+    margin-top: 5rem;
+    cursor: pointer;
+    border: 2px outset #e62727;
+}
+.deleteAll:hover{
+    background: radial-gradient(circle, rgba(249,0,0,1) 20%, rgba(201,154,154,1) 100%);
+}
+#edit, #delete{
+    text-align: center;
+}
+#edit:hover, #delete:hover {
+    background-color: rgba(255, 255, 255, 0.195);
+}
+.alert{
+    border-radius: 1rem ;
+    height: 100px;
+    width: 400px;
+    font-size: medium;
+    text-align: center;
+    position: fixed;
+    top: 1rem;
+    left: 40%;
+    z-index: 1;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    font-family: 'Poppins', sans-serif;
+    
+}
+.alert-p{
+    margin: 0; 
+    background-color: aliceblue;
+    border-radius: 1rem 1rem 0 0;
+    background-color: rgba(255, 0, 0, 0.863);
+    animation: myAnim 5s ease 0s infinite normal forwards;
+}
+#yes, #no {
+    width: 80px;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin: 15px 15px ;
+    font-family: 'Poppins', sans-serif;
+}
+#yes:hover{
+    background-color: rgba(0, 128, 0, 0.589);
+}
+#no:hover{
+    background-color: rgba(255, 0, 0, 0.523);
+}
+
+.alert-hidden {
+    display: none;
+}
+
+@keyframes myAnim {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+
+	25%,
+	75% {
+		opacity: 0;
+	}
+}
