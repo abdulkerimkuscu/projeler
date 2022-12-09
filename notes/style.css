@@ -58,7 +58,7 @@ body{
     overflow: hidden;
     height: 267px;
     width: 100%;
-   
+    overflow: auto;
 }
 .note .hidden{
     display: none;
